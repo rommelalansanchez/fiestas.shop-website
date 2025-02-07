@@ -1,10 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet" /> -->
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Fiestas.shop</title>
-    <link href="assets/css/index.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="img/fiestaspuntoshop-blanco-logo-chico.svg"
+            alt="fiestas.shop_logo"
+            width="200px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="#PlaneaTuEvento" class="nav-link fw-semibold">
+                Planea tu evento
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#Categoria" class="nav-link fw-semibold"> Categoría </a>
+            </li>
+            <li class="nav-item">
+              <a href="#AnunciaTuServicio" class="nav-link fw-semibold">
+                Anuncia tu servicio
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a href="#MisFiestas" class="nav-link fw-semibold">Mis fiestas</a>
+            </li>
+            <li class="nav-item align-content-center pt-sm-2 pt-lg-0">
+              <button class="btn btn-secondary me-1">Regístrate</button>
+              <button class="btn btn-primary">Iniciar Sesión</button>
+            </li>
+            <li class="nav-item align-content-center pt-sm-2"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of NavBar -->
+
+    <header class="header text-center mt-7 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex flex-column justify-content-center">
+            <h1 class="fw-bold display-3">Organiza tus eventos</h1>
+            <h3>
+              Más de <span class="fw-bold">500 proveedores</span> a elegir.
+            </h3>
+            <div class="d-flex flex-row justify-content-around">
+              <div class="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-5">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Busca tu salón, pastel, dj, etc."
+                    aria-label="Recipient's username"
+                    aria-describedby="boton-buscar-hero"
+                  />
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="boton-buscar-hero"
+                    title="Buscar"
+                  >
+                    <!-- <i class="bi bi-magic"></i> -->
+                    <i class="fa-solid fa-cake-candles"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Salones -->
+    <section id="Salones">
+      <div class="container-fluid my-4">
+        <div class="row pb-0 g-3">
+          <div class="col-12 col-md-4 col-xl-6 pe-sm-0">
+            <div
+              class="salones-item premium"
+              style="background-image: url(img/fotos/salon6.jpg)"
+            >
+              <div class="salones-item-top">
+                <span class="badge rounded-pill text-bg-secondary p-2"
+                  >Favorito en bodas</span
+                >
+                <div>
+                  <i
+                    class="bi bi-heart-fill establecer-favorito"
+                    title="Favorito"
+                  ></i>
+                </div>
+              </div>
+              <div class="salones-item-info">
+                <p class="h5">Salón Rammar</p>
+                <p>
+                  El más elegante espacio, con capacidad para 200 personas,
+                  ideal para bodas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-xl-6">
+            <div class="row g-2">
+              <div class="col-6">
+                <div
+                  class="salones-item"
+                  style="background-image: url(img/fotos/salon1.jpg)"
+                >
+                  <div class="salones-item-top">
+                    <div></div>
+                    <div>
+                      <i
+                        class="bi bi-heart establecer-favorito"
+                        title="Favorito"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="salones-item-info">
+                    <p class="h6">Salón X</p>
+                    <p>Tu mejor opción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="salones-item"
+                  style="background-image: url(img/fotos/salon4.jpg)"
+                >
+                  <div class="salones-item-top">
+                    <div></div>
+                    <div>
+                      <i
+                        class="bi bi-heart establecer-favorito"
+                        title="Favorito"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="salones-item-info">
+                    <p class="h6">Salón Y</p>
+                    <p>El lugar de tus sueños.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="salones-item"
+                  style="background-image: url(img/fotos/salon5.jpg)"
+                >
+                  <div class="salones-item-top">
+                    <div></div>
+                    <div>
+                      <i
+                        class="bi bi-heart establecer-favorito"
+                        title="Favorito"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="salones-item-info">
+                    <p class="h6">Salón Z</p>
+
+                    <p>Cumpleaños espectaculares.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="salones-item"
+                  style="background-image: url(img/fotos/salon9.jpg)"
+                >
+                  <div class="salones-item-top">
+                    <div></div>
+                    <div>
+                      <i
+                        class="bi bi-heart establecer-favorito"
+                        title="Favorito"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="salones-item-info">
+                    <p class="h6">Salón A</p>
+                    <p>¿Convenciones?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-3">
+          <p>Sigue descubriendo la categoría de eventos en tu ciudad.</p>
+        </div>
+        <div class="text-center my-3">
+          <button class="btn btn-secondary">Mostrar más</button>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Salones -->
+
+    <!-- Servicios -->
+    <section id="Servicios">
+      <div class="container my-4">
+        <div class="row g-2">
+          <div class="col-6 col-sm-3 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/musica.jpg)"
+            >
+              Música
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon1.jpg" /> -->
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/fotografia.jpg)"
+            >
+              Fotografía
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon3.jpg" /> -->
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/catering.jpg)"
+            >
+              Catering
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon4.jpg" /> -->
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/decoracion.jpg)"
+            >
+              Decorador
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon8.jpg" /> -->
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/salon.jpg)"
+            >
+              Salones
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon8.jpg" /> -->
+          </div>
+          <div class="col-6 col-sm-6 col-lg-2">
+            <div
+              class="servicios-item"
+              style="background-image: url(img/fotos/mobiliario.jpg)"
+            >
+              Mobiliario
+            </div>
+            <!-- <img class="img-fluid" alt="" src="img/fotos/salon8.jpg" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Servicios -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
